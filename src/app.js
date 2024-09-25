@@ -2,10 +2,17 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let domain = () => {
+  let pronouns = ["/the/", "/our", "/IDK"];
+  let adjs = ["/great/", "big", "/npi"];
+  let nouns = ["/jogger/.", "racoon", "BTW"];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  for (let pronoun of pronouns) {
+    for (let adj of adjs) {
+      for (let noun of nouns) {
+        console.log("https//" + pronoun + "" + adj + "" + noun + ".com");
+      }
+    }
+  }
 };
+domain();
